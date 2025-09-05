@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amara Teletech — Official Site</title>
+  <style>
+    :root { --bg:#0b132b; --ink:#1c2541; --ink2:#3a506b; --pop:#5bc0be; --paper:#ffffff; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:#f6f8fb;color:#111}
+    header{background:linear-gradient(135deg,var(--bg),var(--ink));color:#fff;padding:48px 20px 24px}
+    nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:center;margin-top:8px}
+    nav a{color:#fff;text-decoration:none;opacity:.9;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.15)}
+    nav a:hover{opacity:1;background:rgba(255,255,255,.1)}
+    .container{max-width:980px;margin:0 auto;padding:24px 20px}
+    .hero h1{margin:0 0 8px;font-size:32px}
+    .hero p{margin:0;opacity:.9}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}
+    .card{background:#fff;border:1px solid #e6e9ef;border-radius:16px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+    .card h3{margin:0 0 8px}
+    .footer{padding:24px 20px;text-align:center;color:#445;opacity:.8}
+    .btn{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:10px;background:var(--ink2);color:#fff;text-decoration:none}
+    .btn:hover{background:var(--pop);color:#00303f}
+    .notice{background:#fff7cc;border:1px solid #ffe066;color:#5a4100;padding:10px 12px;border-radius:10px;margin:16px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <h1>Amara Teletech Co., Ltd.</h1>
+      <p>Telecom infrastructure • RF &amp; DAS installation • Project execution across Thailand &amp; India</p>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="notice">This is a free starter site hosted on GitHub Pages. You can replace text/images anytime.</div>
+
+    <section id="services">
+      <h2>Core Services</h2>
+      <div class="grid">
+        <div class="card"><h3>RF &amp; DAS</h3><p>End‑to‑end RF cable routing, testing, and Distributed Antenna Systems (DAS) deployment.</p></div>
+        <div class="card"><h3>Fiber &amp; OSP</h3><p>Fiber laying, splicing, OTDR testing, and OSP maintenance for high‑reliability networks.</p></div>
+        <div class="card"><h3>Project Management</h3><p>5‑phase workflow: pre‑sales, planning, execution, billing, closure with transparent reporting.</p></div>
+      </div>
+    </section>
+
+    <section id="sectors">
+      <h2>Sectors</h2>
+      <div class="grid">
+        <div class="card"><h3>Finance</h3><p>Secure connectivity for BFSI data centers and branches.</p></div>
+        <div class="card"><h3>Travel</h3><p>In‑building coverage for airports, stations, and venues.</p></div>
+        <div class="card"><h3>Academic</h3><p>Campus fiber, Wi‑Fi, and safety‑compliant networks.</p></div>
+        <div class="card"><h3>Sports</h3><p>Stadium DAS and event‑grade temporary coverage.</p></div>
+        <div class="card"><h3>Library</h3><p>Quiet‑zone coverage and asset‑tracking infrastructure.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Amara Teletech is a specialist contractor for telecom infrastructure projects with a focus on quality, safety, and on‑time delivery.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> info@amarateletech.co.th &nbsp;|&nbsp; <strong>Phone:</strong> +66‑0000‑0000</p>
+      <a class="btn" href="mailto:info@amarateletech.co.th">Email Us</a>
+    </section>
+  </main>
+
+  <div class="footer">© <span id="y"></span> Amara Teletech Co., Ltd.</div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
